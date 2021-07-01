@@ -1,0 +1,38 @@
+/* On Several Sections */
+
+.links {
+  margin: 1em 0 2em 0;
+  a {
+    display: inline-block;
+    color: $teal;
+    padding: 0 1em;
+  }
+} /* On Several Sections */
+.quote {
+  // line-height: 2;
+  font-family: "Inter", sans-serif;
+  // font-family: "HelveticaNeue", sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  // font-stretch: condensed;
+  // padding: 0;
+  // margin: 1em 0;
+  // font-style: italic;
+
+  span {
+    // padding: 0.5em 0;
+    color: $teal;
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
+    // font-weight: 200;
+  }
+}
+
+.links {
+  margin: 1em 0 2em 0;
+  a {
+    display: inline-block;
+    color: $teal;
+    padding: 0 1.2em;
+  }
+}

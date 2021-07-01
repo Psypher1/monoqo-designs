@@ -1,0 +1,425 @@
+/* Partials */
+// @import "font-face";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+@import "colors";
+@import "utilities";
+@import "multiUse";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  // font-family: "Helvetica", Arial, sans-serif;
+  background-color: #fff;
+  overflow-y: scroll;
+  font-size: 0.9rem;
+  // padding-top: 40px;
+
+  height: 100%; /*Fixes the height to 100% of the viewport*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: $paleGray;
+}
+ul {
+  list-style-type: none;
+}
+
+i {
+  color: $paleGray;
+  &:hover {
+    color: #fff;
+    transition: all 1s ease;
+  }
+}
+/* NaAVBAR */
+header {
+  background-color: $offBlack;
+  color: $monoqoWhite;
+  padding: 1em 0;
+  margin: 0 auto;
+  height: 44px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  //   border: 2px solid green;
+  .container {
+    margin-top: -0.7em;
+    flex-grow: 1;
+  }
+}
+
+.mobile-open,
+.mobile-close {
+  display: none;
+}
+
+.logo {
+  margin-left: 5em;
+  //   margin: 0 auto;
+  //   padding: 0;
+  padding-top: 0.3rem;
+  img {
+    // border: 2px solid red;
+    height: 1.5em;
+    width: 1.5em;
+  }
+}
+
+// MOBILE ICONS
+.mobile-open,
+.mobile-close {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  flex-grow: 1;
+  z-index: 998;
+  position: relative;
+  z-index: 999;
+
+  a {
+    color: $headerText;
+    transition: 0.3s;
+    font-size: 0.9em;
+
+    &:hover {
+      color: #fff;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.nav-item + .nav-item {
+  margin-left: 2em;
+}
+.nav-primary {
+  margin-left: 2em;
+}
+.nav-secondary {
+  margin-left: 2em;
+}
+
+/* INFO SECTION */
+.info {
+  font-size: 0.9em;
+  padding-top: 44px;
+  width: 100%;
+  background: $teal;
+  .info-main-link {
+    width: 100%;
+    padding: 12px 28px;
+    background: $teal;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  .info-text {
+    background: lightgray;
+    // width: 100%;
+    padding: 12px 0;
+    a {
+      color: $teal;
+    }
+  }
+}
+
+/* SECTIONS */
+.section-img {
+  width: 60%;
+  height: auto;
+}
+
+/* MAIN SECTION = logos */
+.section {
+  padding-top: 3rem;
+  margin-bottom: 0.5em;
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  // p {
+  //   margin: 1em;
+  // }
+}
+
+/* Corporate */
+.corporate {
+  .quote {
+    margin: 1rem 0;
+  }
+}
+.corporate,
+.cards,
+.layout {
+  p {
+    font-weight: 300;
+  }
+}
+
+/* Cards */
+.cards,
+.layout {
+  background: #000;
+  color: #fff;
+
+  .quote {
+    margin: 1rem 0;
+  }
+}
+
+.cards {
+  .section-img {
+    margin-bottom: -0.3em;
+  }
+}
+
+.layout {
+  .section-img {
+    padding-bottom: 1.5em;
+  }
+}
+
+/* GRID */
+.grid-areas {
+  margin: 0 0.7rem;
+  padding: 0;
+  img {
+    width: 50%;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+  h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+  .quote {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    // border: 2px solid red;
+  }
+
+  .links {
+    margin-top: 1rem;
+    // border: 2px solid green;
+  }
+
+  /* Photo Edits */
+  .photo-edits {
+    padding-top: 5em;
+    // h2 {
+    //   margin-top: 3em;
+    // }
+    img {
+      margin-top: 1.5em;
+    }
+  }
+  /* Design Thinking */
+  .design-thinking {
+    background: #000;
+    color: #fff;
+    padding: 5em 1em;
+
+    img {
+      // margin-top: 5em;
+      width: 25%;
+    }
+    .quote {
+      margin-top: 1rem;
+    }
+    .links {
+      margin-top: 1rem;
+    }
+  }
+  /* Mono */
+  .mono {
+    // background: $monoqoWhite;
+    padding: 2em 1em 1.5em 1em;
+
+    p {
+      padding-top: 1rem;
+    }
+
+    h2 {
+      font-family: "Plaster";
+      font-size: 3rem;
+    }
+
+    img {
+      margin-top: 2em;
+      width: 60%;
+    }
+  }
+  /* Heart */
+  .heart {
+    // background: $monoqoWhite;
+    padding-top: 3em;
+
+    .any-occasion {
+      align-items: center;
+      justify-content: center;
+      font-size: 0.875rem;
+      letter-spacing: 0.05rem;
+      // border: 2px solid red;
+      span {
+        font-family: "Plaster";
+        padding: 0 0.5em;
+      }
+      img {
+        // height: 2.4em;
+        width: 3em;
+        padding: 0 0.5em;
+        margin: 0;
+        // border: 2px solid green;
+      }
+    }
+
+    h2 {
+      span {
+        color: $teal;
+      }
+    }
+
+    img {
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-top: 2em;
+      margin-bottom: 0;
+      width: 100%;
+    }
+  }
+
+  .mcard {
+    // background-color: $monoqoWhite;
+    padding-top: 3em;
+    padding-bottom: 2em;
+
+    .mcard-title {
+      font-size: 2em;
+      span {
+        font-family: "Plaster";
+      }
+    }
+  }
+
+  .afronauts {
+    background: url(/img/afro.JPG) no-repeat bottom center/cover;
+    color: #fff;
+    // background-image: url(/img//afro.JPG) no-re;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    // justify-content: none;
+    // margin-bottom:auto;
+    // ffix this
+    p {
+      margin-top: 15rem;
+    }
+
+    h2 {
+      font-family: "Beyno";
+      font-size: 2em;
+    }
+  }
+}
+
+.design-thinking,
+.photo-edits,
+.mono,
+.heart,
+.mcard {
+  align-items: center;
+  justify-content: center;
+}
+
+.heart,
+.mcard,
+.mono,
+.afronauts {
+  background-color: $monoqoWhite;
+}
+
+h2 {
+  font-weight: 400;
+}
+/* FOOTER */
+footer {
+  margin: 0 auto;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  color: $footerText;
+  background: $monoqoWhite;
+  padding: 1em 0;
+  margin-top: 0.7rem;
+  line-height: 1.5;
+  font-size: 0.875rem;
+
+  a {
+    color: $teal;
+  }
+  p {
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+  }
+
+  hr {
+    width: 90%;
+    opacity: 0.4;
+  }
+
+  .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1em;
+    margin: 0 auto;
+    padding: 1em 0;
+
+    li {
+      line-height: 1.5;
+      font-size: 0.9em;
+      font-weight: 400;
+
+      ul {
+        padding-left: 1em;
+
+        li {
+          font-weight: 200;
+          font-size: 0.8em;
+          color: var(--fourth);
+        }
+      }
+
+      span {
+        font-weight: 800;
+        // padding-bottom: 5em;
+      }
+    }
+  }
+  .copywright {
+    margin-top: 0.5rem;
+  }
+}
+
+/* MEDIA QUERIES */
+@import "mediaQueries";

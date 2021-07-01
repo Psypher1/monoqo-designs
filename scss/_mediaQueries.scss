@@ -1,0 +1,169 @@
+@media (max-width: 1105px) {
+  .nav {
+    display: none;
+  }
+
+  header {
+    padding: 1.5em 0;
+    .nav-secondary {
+      display: none;
+    }
+  }
+
+  .logo {
+    display: block;
+    text-align: center;
+    // border: 2px solid red;
+    // padding: 1em 0 1em 9em;
+    // margin-top: -1.3em;
+    margin: 0 auto;
+    .logo-img {
+      margin: 0 auto;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .mobile-open {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    padding: 0.2em 0 1em 1.5em;
+    margin: auto 0;
+  }
+  nav.menu-btn {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: black;
+    height: 100vh;
+    padding: 1em;
+    opacity: 0.9;
+
+    .nav-primary {
+      margin-top: 3em;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .nav-list {
+        flex-direction: column;
+      }
+      .nav-item {
+        display: block;
+        margin: 0;
+
+        .nav-link {
+          text-decoration: none;
+          display: block;
+          padding: 1em 1em 1em 0;
+          font-size: 1em;
+          text-align: left;
+          border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+        }
+      }
+    }
+
+    .mobile-close {
+      display: block;
+      float: left;
+      margin: 0.3em 1.5em;
+
+      cursor: pointer;
+    }
+  }
+  .info {
+    padding-top: 44px;
+  }
+  .afronauts {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    padding-top: 44px;
+  }
+  .info-text {
+    .information {
+      padding: 0 0.6em;
+    }
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding-top: 2rem;
+
+    .pricing {
+      font-size: 0.8em;
+      padding: 0 1em;
+    }
+
+    .section-img {
+      width: 60%;
+    }
+  }
+  .corporate,
+  .cards,
+  .layout {
+    h1 {
+      font-size: 2rem;
+    }
+    .quote {
+      font-size: 1.1rem;
+      span {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-areas {
+    padding: 0;
+    margin: 0 0.3rem;
+    font-size: 0.975rem;
+    h2 {
+      font-size: 2rem;
+    }
+    .quote {
+      font-size: 1.1rem;
+      span {
+        margin-top: 2rem;
+      }
+    }
+    .mono {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+    .afronauts {
+      margin-top: 2rem;
+      padding: 2rem 1rem;
+    }
+  }
+
+  .photo-edits,
+  .heart {
+    padding: 0 1rem;
+  }
+
+  .footer {
+    p {
+      line-height: 1.5;
+      font-size: 0.9em;
+    }
+    .footer-cols {
+      display: none;
+    }
+  }
+}

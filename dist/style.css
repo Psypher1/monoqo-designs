@@ -445,6 +445,10 @@ header .container {
   padding-top: 3em;
   padding-bottom: 2em;
 }
+.grid-areas .mcard .logo-mcard {
+  width: 2.5em;
+  margin-right: 0.3rem;
+}
 .grid-areas .mcard .mcard-title {
   font-size: 2em;
 }
